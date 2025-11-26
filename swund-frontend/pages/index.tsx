@@ -15,7 +15,7 @@ export default function Home(): JSX.Element {
         <title>Swund - Decentralized AI-Powered Crypto Trading on the Polygon chain</title>
         <meta
           name="description"
-          content="I0rd is a decentralized, AI-powered crypto trading app built on 0G’s Modular Layer 1 blockchain. Trade crypto with real-time analysis, AI insights, and community tools for transparent, accessible trading."
+          content="I0rd is a decentralized, AI-powered crypto trading app built on the Polygon Chain. Trade crypto with real-time analysis, AI insights, and community tools for transparent, accessible trading."
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
