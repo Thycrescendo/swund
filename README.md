@@ -1,161 +1,165 @@
-# 🚀 I0rd - Decentralized AI-Powered Crypto Trading App
+# **swund – Decentralized AI-Powered Crypto Trading App**
 
-## 📖 Overview
-**I0rd** is a pioneering decentralized crypto trading application built on **0G’s Modular Layer 1 blockchain**.  
-Inspired by platforms like **Binance**, I0rd integrates an **AI assistant** to deliver:
+## **Overview**
 
-- Real-time market insights  
-- Personalized trading strategies  
-- A community-driven trading experience  
+**swund** is a fully decentralized, AI-powered crypto trading platform built on **Polygon** — the fastest and lowest-cost Layer-2 scaling solution.
 
-Built with **Next.js, Tailwind CSS, and TypeScript**, this project aims to make AI a **public good in the Web3 ecosystem**.  
+Think **Binance-level UX**, but **on-chain**, powered by autonomous AI agents that deliver real-time signals, personalized strategies, and automated trade execution — all for **sub-cent fees** with **sub-second finality**.
 
-🔗 Repository: [github.com/Thycrescendo/i0rd](https://github.com/Thycrescendo/i0rd)
+* **Live on Polygon Mumbai / Amoy**
+* **Ready to scale & raise**
 
-💰 USDC deployed to: 0xa05913F7Da55d238BF210B414003149676889889
-⚙️ I0rdCore deployed to: 0x8182e0103717682ACd1632bD19891F94BbA5C32a
-✅ Minted 10,000 USDC to deployer
----
-
-## ⚡ What It Does
-I0rd provides a robust, decentralized trading platform with:
-
-- 📊 **Real-time multi-chart interface** for monitoring tokens  
-- 🤖 **AI-powered market analysis** & personalized trading signals  
-- 🔍 **Token discovery & watchlists** with detailed metrics  
-- 🌐 **Decentralized community features** for user engagement  
-- 🔒 **Secure onchain transactions** powered by 0G infrastructure  
+Repository: `https://github.com/yourusername/swund`
+*(Update the link with your actual repo.)*
 
 ---
 
-## 🧩 The Problem It Solves
-Traditional trading platforms are:
+## **What It Does**
 
-- Too centralized  
-- Costly with high fees  
-- Lacking personalized insights  
+swund transforms Polygon into a professional trading terminal:
 
-I0rd solves this by leveraging **0G’s modular services** (Chain, Compute, Storage, Data Availability), creating a **scalable, censorship-resistant**, AI-powered financial tool.
-
----
-
-## ✨ Features
-- **Multi-Chart Interface** → Real-time token tracking with customizable grids  
-- **AI Assistant** → Trend analysis, sentiment insights & strategies via 0G Compute  
-- **Decentralized Storage** → Secure market data & preferences with 0G Storage  
-- **Smart Contracts** → Trade execution & wallet management on 0G Chain  
-- **Responsive Design** → Optimized with Tailwind CSS for all devices  
+* Real-time **multi-chart interface** (spot + perps)
+* **AI agents** for signals, trend analysis & copy-trading
+* On-chain **token discovery**, watchlists & community feeds
+* **Instant, gas-efficient** trade execution
+* Push notifications for fills and AI alerts
 
 ---
 
-## 🗺 Roadmap
-The I0rd journey is divided into **six cosmic waves**:
+## **The Problem It Solves**
 
-1. **Wave 1: Ideation & Planning** – Architecture design, demo, and roadmap creation  
-2. **Wave 2: Core Trading Platform** – Multi-chart trading, token discovery, AI trend analysis  
-3. **Wave 3: Platform Enhancements** – Performance boost, persistent layouts, personalized signals  
-4. **Wave 4: Advanced AI Technical Analysis** – Support/resistance levels, predictive insights  
-5. **Wave 5: Community & Social Features** – Threaded comments, sentiment analysis, profiles  
-6. **Wave 6: Portfolio & INFTs** – Portfolio tracking, Intelligent NFTs (tokenized strategies)  
+Centralized exchanges are:
 
-💡 **Theme:** A cosmic expedition where each wave is a launchpad, propelling I0rd through the galaxy of Web3.
+* Expensive
+* Custodial
+* Slow
+* Lacking true intelligence
 
----
+Most DEXs are clunky and don't feel professional.
 
-## 🛠 Technologies Used
-- [Next.js](https://nextjs.org/) → Frontend framework  
-- [Tailwind CSS](https://tailwindcss.com/) → Modern, responsive UI  
-- [TypeScript](https://www.typescriptlang.org/) → Type-safe code  
-- [0G SDK](https://0g.ai/) → Interaction with 0G Chain, Compute, Storage, DA  
-- [Chart.js](https://www.chartjs.org/) → Dynamic charting  
-- [MetaMask](https://metamask.io/) → Web3 wallet integration  
+**swund** leverages:
+
+* Polygon’s ultra-fast, low-fee environment
+* Chainlink price feeds
+* Hybrid on-chain AI
+
+…to deliver institutional-grade tools in a **completely decentralized**, AI-native architecture — perfect for the booming **AI + DeFi** funding vertical.
 
 ---
 
-## ⚙️ How We Built It
-1. **Ideation** → Market research, architecture design with 0G services  
-2. **Demo** → Static trading interface with Next.js & Tailwind CSS  
-3. **Development** → Smart contracts on 0G Chain, AI with 0G Compute, data via 0G Storage  
-4. **Testing** → Scalability & responsiveness ensured via iterative feedback  
+## **Features**
+
+* **Professional multi-chart dashboard** (TradingView-like)
+* **Autonomous AI agents** for real-time signals and strategy execution
+* On-chain **community** features & token leaderboards
+* **Push Protocol notifications** for trades & alerts
+* **Mobile-first**, optimized for speed and responsiveness
+* Instant, low-cost transactions thanks to Polygon
 
 ---
 
-## 🧗 Challenges
-- Debugging API inconsistencies in 0G modular services  
-- Optimizing AI inference for **real-time performance**  
-- Handling diverse Web3 authentication standards  
+## **Roadmap – Six Waves to Mainnet & Fundraising**
+
+**Wave 1:** Ideation & MVP – **Done**
+**Wave 2:** Core Trading Engine + AI Signals – **Live on Polygon Mumbai**
+**Wave 3:** Copy-trading & swund Agents – *Next 4 weeks*
+**Wave 4:** Intelligent NFTs (iNFTs) – *On-chain evolving strategies*
+**Wave 5:** AggLayer Cross-chain + Mobile Apps
+**Wave 6:** Governance Token + DAO Treasury
 
 ---
 
-## 🎓 What We Learned
-- Mastery of **0G’s modular architecture**  
-- Efficient **AI optimization techniques** for blockchain environments  
-- Importance of **community feedback** in refining UI/UX  
+## **Technologies Used**
+
+* **Next.js + TypeScript + Tailwind CSS** – frontend
+* **Solidity + Hardhat** – smart contracts
+* **Polygon CDK + Mumbai/Amoy** – deployments
+* **Chainlink Data Feeds + Automation** – real-time pricing
+* **The Graph** – indexing trades & signals
+* **Push Protocol** – live notifications
+* **WalletConnect / MetaMask** – onboarding
 
 ---
 
-## 🔮 What's Next
-- AI upgrades with **predictive trading models** via 0G Compute  
-- **Intelligent NFTs (INFTs)** for tokenized trading strategies  
-- Developer **SDK & analytics dashboard** for ecosystem support  
-- Expansion to **mobile apps** & **community governance** features  
+## **How We Built It**
+
+* Designed UX in **Figma → Next.js + Tailwind** implementation
+* Deployed core vault & trading contracts on Polygon
+* Integrated **Chainlink** price feeds
+* Built hybrid **AI agents** (off-chain inference → on-chain execution)
+* Added **The Graph** & Push notifications for sub-second experiences
+* All community/social features stored **fully on-chain**
 
 ---
 
-## 🛠 Installation
+## **Challenges**
+
+* Balancing low-latency AI inference with on-chain security
+* Optimizing gas for frequent signal updates
+* Building seamless mobile wallet flows
+
+---
+
+## **What We Learned**
+
+* Polygon’s **<2s finality + sub-cent gas** makes it feel like Web2
+* Push notifications dramatically improve retention
+* Governance & tokenomics matter much earlier than expected
+* Hybrid AI = best balance of speed + decentralization
+
+---
+
+## **What's Next**
+
+* **swund Agents:** autonomous AI traders you can copy or stake on
+* **iNFTs:** NFTs that evolve with your trading strategy
+* **AggLayer cross-chain engine** (ETH, Base, Arbitrum)
+* Native **iOS/Android** apps
+* **Revenue-sharing SDK** for signal providers
+* Governance token + DAO rollout
+
+---
+
+## **Installation**
+
 ```bash
-# Clone the repo
-git clone https://github.com/Thycrescendo/i0rd.git
-
-# Navigate into project
-cd i0rd
-
-# Install dependencies
+git clone https://github.com/yourusername/swund.git
+cd swund
 npm install
 
-# Configure environment variables (e.g., 0G API keys) in .env
+cp .env.example .env.local
+# Add your Polygon RPC, Chainlink keys, Push keys, etc.
 
-# Start development server
 npm run dev
-````
+```
 
-Visit 👉 [http://localhost:3000](http://localhost:3000)
-
----
-
-## 🤝 Contributing
-
-Contributions are welcome!
-
-* Fork the repo and create your feature branch
-* Submit pull requests
-* For major changes, open an issue to discuss first
-
-Maintainer: **[Thycrescendo](https://github.com/Thycrescendo)**
+Visit the app locally at:
+**[http://localhost:3000](http://localhost:3000)**
 
 ---
 
-## 📜 License
+## **Contributing**
 
-This project is licensed under the **MIT License** – see the [LICENSE](./LICENSE) file for details.
+1. Fork the repo
+2. Create a feature branch
+3. Submit a Pull Request
+
+All contributions are welcome!
+
+Maintainer: **@yourusername**
 
 ---
 
-## 🙏 Acknowledgments
+## **License**
 
-Special thanks to the **0G team** for their frictionless infrastructure and continued support in pushing the boundaries of decentralized AI.
+**MIT License** – see [`LICENSE`](./LICENSE)
 
 ---
 
-# 🌌 I0rd Roadmap – Journey to Decentralized AI Trading Excellence
+## **Acknowledgments**
 
-> *A cosmic voyage through the 0G universe, where each wave is a launchpad propelling I0rd closer to becoming the stellar hub of decentralized AI-powered trading.*
+Huge thanks to **Polygon Labs** and the entire Polygon ecosystem for building the fastest, cheapest, and most developer-friendly chain in Web3.
 
-* **Wave 1: Ideation & Planning – The Launchpad** 🚀
-* **Wave 2: Core Trading Platform – Into Orbit** 🌍
-* **Wave 3: Platform Enhancements – Stellar Refinement** ✨
-* **Wave 4: Advanced AI Technical Analysis – Nebula Exploration** 🌌
-* **Wave 5: Community & Social Features – Galactic Community** 🛰
-* **Wave 6: Portfolio & INFTs – Cosmic Expansion** 🌠
+---
 
-Each wave combines **objectives, deliverables, challenges, and visuals**—symbolizing I0rd’s transformation from concept to a **decentralized AI trading galaxy**.
+## **swund – Real-time. AI-native. Built on Polygon. Ready to raise.**
