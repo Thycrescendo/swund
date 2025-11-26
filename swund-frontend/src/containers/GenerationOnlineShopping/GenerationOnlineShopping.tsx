@@ -101,7 +101,7 @@ const GenerationOnlineShopping: React.FC = () => {
               Decentralized Trading
             </span>
             <span className="text-darkGray font-Montserrat text-lg mt-6">
-              I0rd addresses the centralization and high costs of traditional trading platforms like Binance, where users face limited control, hidden fees, and lack of personalized insights. <br />
+              Swund addresses the centralization and high costs of traditional trading platforms like Binance, where users face limited control, hidden fees, and lack of personalized insights. <br />
               Built on 0G for scalable, AI-driven trading
             </span>
           </div>
@@ -122,7 +122,7 @@ const GenerationOnlineShopping: React.FC = () => {
       </div>
       <div className="flex flex-col text-center mt-4 md:mx-0 mx-4 mb-14">
         <span className="text-darkGray font-Montserrat text-5xl font-bold leading-normal">
-          AI-Powered Insights on I0rd
+          AI-Powered Insights on Swund
         </span>
         <span className="text-darkGray font-Montserrat text-lg mt-6">
           Leverage 0G&apos;s infrastructure for real-time market analysis and trading strategies, democratizing financial empowerment with transparent, on-chain AI solutions. <br />

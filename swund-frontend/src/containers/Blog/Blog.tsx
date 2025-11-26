@@ -51,7 +51,7 @@ const Blog: React.FC = () => {
     <div className="max-w-screen-lg lg:m-auto mx-5">
       <div className="flex flex-col text-center mt-4 mb-14">
         <span className="text-darkGray font-Montserrat text-5xl font-bold leading-normal">
-          Latest Trading Insights on I0rd
+          Latest Trading Insights on Swund
         </span>
         <span className="text-darkGray font-Montserrat text-lg mt-6">
           Discover real-time market analysis, AI strategies, and community discussions on 0G blockchain trading. <br />
