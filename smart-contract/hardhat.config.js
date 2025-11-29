@@ -1,71 +1,74 @@
-require("dotenv").config();
 require("@nomicfoundation/hardhat-toolbox");
 require("@openzeppelin/hardhat-upgrades");
+require("dotenv").config();
 
-// ENV Vars
-const OG_RPC_URL = process.env.OG_RPC_URL || "https://evmrpc-testnet.0g.ai";
-const OG_MAINNET_RPC_URL = process.env.OG_MAINNET_RPC_URL || "https://evmrpc.0g.ai";
-const SEPOLIA_RPC_URL = process.env.SEPOLIA_RPC_URL || "";
+/** @type import('hardhat/config').HardhatUserConfig */
+
 const PRIVATE_KEY = process.env.PRIVATE_KEY || "";
-const ETHERSCAN_API_KEY = process.env.ETHERSCAN_API_KEY || "";
 
-if (!PRIVATE_KEY) {
-  console.warn("⚠️ PRIVATE_KEY missing — deployments will fail.");
+if (!PRIVATE_KEY && process.env.HARDHAT_NETWORK !== "hardhat") {
+  console.warn("PRIVATE_KEY not set in .env — deployments to real networks will fail");
 }
-const accounts = PRIVATE_KEY ? [PRIVATE_KEY] : [];
 
 module.exports = {
   solidity: {
     version: "0.8.24",
     settings: {
-      optimizer: { enabled: true, runs: 200 },
-      metadata: { bytecodeHash: "none" },
+      optimizer: {
+        enabled: true,
+        runs: 200,
+      },
+      viaIR: true,                    // ← best optimization possible on Polygon right now
       evmVersion: "paris",
+      metadata: {
+        bytecodeHash: "none",         // ← deterministic builds (critical for upgradeable contracts)
+      },
     },
   },
+
   networks: {
-    og_galileo: {
-      chainId: 16602,
-      url: OG_RPC_URL,
-      accounts,
-      gasPrice: 3000000000,
-      gas: 5_000_000,
+    hardhat: {
+      chainId: 31337,
+      // Uncomment below if you ever want to fork Polygon mainnet locally
+      // forking: {
+      //   url: process.env.POLYGON_MAINNET_RPC || "https://polygon-rpc.com",
+      //   blockNumber: 68_000_000,
+      // },
     },
-    og_mainnet: {
-      chainId: 16661,
-      url: OG_MAINNET_RPC_URL,
-      accounts,
-      gasPrice: 3000000000,
-      gas: 5_000_000,
+
+    // Polygon Amoy Testnet
+    amoy: {
+      url: process.env.AMOY_RPC_URL || "https://rpc-amoy.polygon.technology",
+      accounts: PRIVATE_KEY ? [PRIVATE_KEY] : [],
+      chainId: 80002,
+      gasPrice: "auto",      // 2025 best practice — avoids underpriced errors
+      timeout: 120_000,
     },
-    sepolia: {
-      chainId: 11155111,
-      url: SEPOLIA_RPC_URL,
-      accounts,
+
+    // Polygon Mainnet
+    polygon: {
+      url: process.env.POLYGON_RPC_URL || "https://polygon-rpc.com",
+      accounts: PRIVATE_KEY ? [PRIVATE_KEY] : [],
+      chainId: 137,
+      gasPrice: "auto",
+      timeout: 120_000,
     },
   },
-  etherscan: {
-    apiKey: {
-      sepolia: ETHERSCAN_API_KEY,
-      og_mainnet: ETHERSCAN_API_KEY, // Use 0G explorer API key if required
-    },
-    customChains: [
-      {
-        network: "og_galileo",
-        chainId: 16602,
-        urls: {
-          apiURL: "https://explorer.testnet.0g.ai/api",
-          browserURL: "https://explorer.testnet.0g.ai",
-        },
-      },
-      {
-        network: "og_mainnet",
-        chainId: 16661,
-        urls: {
-          apiURL: "https://explorer.0g.ai/api",
-          browserURL: "https://explorer.0g.ai",
-        },
-      },
-    ],
+
+  // No etherscan block at all → zero Polygonscan dependency
+  gasReporter: {
+    enabled: process.env.REPORT_GAS === "true",
+    currency: "USD",
+  },
+
+  paths: {
+    sources: "./contracts",
+    tests: "./test",
+    cache: "./cache",
+    artifacts: "./artifacts",
+  },
+
+  mocha: {
+    timeout: 400_000,
   },
 };

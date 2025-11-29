@@ -9,10 +9,9 @@ Think **Binance-level UX**, but **on-chain**, powered by autonomous AI agents th
 * **Live on Polygon Mumbai / Amoy**
 * **Ready to scale & raise**
 
-Repository: `https://github.com/yourusername/swund`
-*(Update the link with your actual repo.)*
+## live demo: https://swund.vercel.app/
 
----
+## deployed to: 0xa05913F7Da55d238BF210B414003149676889889 ⚙️ I0rdCore deployed to: 0x8182e0103717682ACd1632bD19891F94BbA5C32a ✅ Minted 10,000 USDC to deployer
 
 ## **What It Does**
 
