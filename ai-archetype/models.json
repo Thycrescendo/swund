@@ -1,0 +1,53 @@
+{
+  "models": [
+    {
+      "id": "price_predictor",
+      "type": "regression",
+      "description": "Predicts crypto prices using historical data",
+      "training_script": "training/train_price_predictor.py",
+      "params": {
+        "features": ["open", "high", "low", "volume"],
+        "target": "close",
+        "epochs": 50
+      },
+      "layout": {
+        "nodes": [
+          {"id": "data_input", "type": "source", "position": {"x": 0, "y": 0}},
+          {"id": "preprocess", "type": "layer", "position": {"x": 100, "y": 50}},
+          {"id": "ml_model", "type": "core", "position": {"x": 200, "y": 100}},
+          {"id": "output_signal", "type": "sink", "position": {"x": 300, "y": 50}}
+        ],
+        "edges": [
+          {"from": "data_input", "to": "preprocess"},
+          {"from": "preprocess", "to": "ml_model"},
+          {"from": "ml_model", "to": "output_signal"}
+        ]
+      },
+      "on_chain_compatible": true,
+      "integration_script": "integration/submit_signal_to_chain.js"
+    },
+    {
+      "id": "sentiment_analyzer",
+      "type": "classification",
+      "description": "Analyzes X sentiment for tokens",
+      "training_script": "training/train_sentiment.py",
+      "params": {
+        "source": "coingecko",
+        "labels": ["bullish", "bearish", "neutral"]
+      },
+      "layout": {
+        "nodes": [
+          {"id": "text_fetch", "type": "source", "position": {"x": 0, "y": 0}},
+          {"id": "nlp_process", "type": "layer", "position": {"x": 150, "y": 100}},
+          {"id": "classifier", "type": "core", "position": {"x": 300, "y": 0}}
+        ],
+        "edges": [
+          {"from": "text_fetch", "to": "nlp_process"},
+          {"from": "nlp_process", "to": "classifier"}
+        ]
+      },
+      "on_chain_compatible": true,
+      "integration_script": "integration/submit_sentiment_to_chain.js"
+    }
+  ]
+}
