@@ -145,10 +145,6 @@ Visit the app locally at:
 
 All contributions are welcome!
 
-Maintainer: **@yourusername**
-
----
-
 ## **License**
 
 **MIT License** – see [`LICENSE`](./LICENSE)
