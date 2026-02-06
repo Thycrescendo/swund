@@ -1,0 +1,25 @@
+{
+  "name": "swund-ai-module",
+  "version": "0.1.0",
+  "private": true,
+  "description": "AI models and training for Swund decentralized trading app",
+  "main": "inference/run_inference.js",
+  "scripts": {
+    "infer": "node inference/run_inference.js",
+    "integrate": "node integration/submit_signal_to_chain.js"
+  },
+  "dependencies": {
+    "@tensorflow/tfjs-node": "^4.21.0",
+    "axios": "^1.7.7",
+    "dotenv": "^16.4.5",
+    "ethers": "^6.13.2"
+  },
+  "devDependencies": {
+    "@types/node": "^22.5.5"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "author": "Thycrescendo",
+  "license": "MIT"
+}

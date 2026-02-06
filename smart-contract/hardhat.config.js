@@ -18,10 +18,10 @@ module.exports = {
         enabled: true,
         runs: 200,
       },
-      viaIR: true,                    // ← best optimization possible on Polygon right now
+      viaIR: true,                    
       evmVersion: "paris",
       metadata: {
-        bytecodeHash: "none",         // ← deterministic builds (critical for upgradeable contracts)
+        bytecodeHash: "none",        
       },
     },
   },
